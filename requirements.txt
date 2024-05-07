@@ -4,3 +4,7 @@ python-dotenv
 requests
 beautifulsoup4
 google-generativeai
+supabase==0.1.9
+pyvis==0.3.2  # Pyvis for graph visualization
+networkx==3.0  # NetworkX for graph manipulation
+

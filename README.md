@@ -1,6 +1,8 @@
 # 510_lab6
 
-# this is a lab about learning LLms and chatbots
+# this is a lab about learning LLms and chatbots, I try to build a interactive knowledge graph that could present what gemini generate basing on my prompts
+
+# the prompt.ipynb incude my prompts practice
 
 Getting Started
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Visualization</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="mynetwork" style="width: 100%; height: 800px;"></div>
+    <script type="text/javascript">
+        // Define the graph data
+        var nodes = new vis.DataSet([
+            {id: 1, label: 'Root Node'},
+            {id: 2, label: 'Prompt: Example Prompt'},
+            {id: 3, label: 'Response: Example Response'}
+        ]);
+
+        var edges = new vis.DataSet([
+            {from: 1, to: 2},
+            {from: 2, to: 3}
+        ]);
+
+        // Configure and initialize the network
+        var container = document.getElementById('mynetwork');
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        var options = {};
+        var network = new vis.Network(container, data, options);
+    </script>
+</body>
+</html>
